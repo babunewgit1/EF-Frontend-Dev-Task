@@ -1,0 +1,840 @@
+/*
+====================================
+Medium Screen - Others
+====================================
+*/
+@media screen and (min-width: 992px) and (max-width: 1350px) {
+  .headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    height: 110px;
+  }
+
+  #trending {
+    margin-top: -90px;
+  }
+}
+
+/*
+====================================
+Small Screen - Tablate
+====================================
+*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-fluid {
+    padding: 0px 15px;
+  }
+
+  .topMenu ul li a {
+    margin: 0px 4px;
+    font-size: 15px;
+  }
+
+  .headerLeft a img {
+    max-width: 90px;
+  }
+
+  .headerMenu {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    left: -100%;
+    top: 0;
+    z-index: 9999;
+    padding: 35px;
+    transition: all 0.5s ease;
+    border-radius: 0;
+  }
+
+  .menuActive {
+    left: 0%;
+  }
+
+  .headerCart ul li a {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #hambargur {
+    display: inline-block;
+    opacity: 1 !important;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  header {
+    margin-top: 15px;
+  }
+
+  .headerMenu ul li {
+    display: block;
+    margin: 8px auto;
+  }
+
+  .headerMenu ul li a {
+    font-size: 15px;
+  }
+
+  .selected .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    top: 35px;
+    left: 0;
+    padding: 15px;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+
+  .dropdownHeading {
+    border-radius: 6px;
+    padding: 6px 15px;
+  }
+
+  .dropdownListOne {
+    padding: 8px 4px;
+  }
+
+  .dropdownListOne ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+  }
+
+  .dropdownListOne ul li a img {
+    display: inline-block;
+    width: 30px;
+  }
+
+  .dropdownListTwo {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .itemsOne p {
+    font-size: 14px;
+  }
+
+  #dropdownHolder a {
+    font-size: 18px !important;
+    margin: 10px 0px !important;
+  }
+
+  button#mobileSearch {
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    color: #fff;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 16px;
+    margin-left: -15px;
+    cursor: pointer;
+    margin: 0px 15px;
+    margin-left: 0;
+  }
+
+  #searchbtn {
+    display: none;
+  }
+
+  span#closeMenu {
+    display: inline-block;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  .searchBox {
+    position: relative;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    width: 100%;
+    height: 50px;
+    border-radius: 45px;
+    padding: 0px 7px;
+    left: 0;
+    top: 35px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .cross span {
+    left: 8px;
+    top: -35px;
+  }
+
+  .mobileshow {
+    opacity: 1;
+    top: 15px;
+    visibility: visible;
+    display: flex;
+  }
+
+  .hero-cnt-wrapper {
+    margin-top: 10px;
+    position: inherit;
+  }
+
+  .hero-cnt-wrapper h2 {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .hero-cnt-wrapper a {
+    font-size: 16px;
+    padding: 12px 25px;
+    position: relative;
+    top: 26px;
+    left: 0;
+  }
+  .hero-cnt-wrapper a::before {
+    right: -3px;
+    top: -3px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a::after {
+    border-width: 2px;
+    left: -3px;
+    top: -3px;
+  }
+
+  .hero-cnt-wrapper a span::before {
+    left: -28px;
+    top: 20px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a span::after {
+    right: -28px;
+    top: 20px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a:hover::before {
+    right: -8px;
+    top: -8px;
+  }
+
+  .hero-cnt-wrapper a:hover::after {
+    left: -8px;
+    top: -8px;
+  }
+
+  .hero-cnt-wrapper a:hover span::before {
+    left: -33px;
+    top: 25px;
+  }
+
+  .hero-cnt-wrapper a:hover span::after {
+    right: -33px;
+    top: 25px;
+  }
+
+  #heroArea {
+    padding-bottom: 156px;
+    clip-path: none;
+  }
+
+  #trending {
+    clip-path: none;
+    padding-top: 80px;
+    margin-top: 0;
+  }
+
+  .hero-cnt {
+    margin-top: 60px;
+  }
+
+  .trendingBlockList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+}
+
+/*
+====================================
+Small Screen - Mobile
+====================================
+*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .container-fluid {
+    padding: 0px 15px;
+  }
+
+  .topMenu ul li a {
+    margin: 0px 4px;
+    font-size: 15px;
+  }
+
+  .headerLeft a img {
+    max-width: 90px;
+  }
+
+  .headerMenu {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    left: -100%;
+    top: 0;
+    z-index: 9999;
+    padding: 35px;
+    transition: all 0.5s ease;
+    border-radius: 0;
+  }
+
+  .menuActive {
+    left: 0%;
+  }
+
+  .headerCart ul li a {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #hambargur {
+    display: inline-block;
+    opacity: 1 !important;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  header {
+    margin-top: 15px;
+  }
+
+  .headerMenu ul li {
+    display: block;
+    margin: 8px auto;
+  }
+
+  .headerMenu ul li a {
+    font-size: 15px;
+  }
+
+  .selected .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    top: 35px;
+    left: 0;
+    padding: 15px;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+
+  .dropdownHeading {
+    border-radius: 6px;
+    padding: 6px 15px;
+  }
+
+  .dropdownListOne {
+    padding: 8px 4px;
+  }
+
+  .dropdownListOne ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+  }
+
+  .dropdownListOne ul li a img {
+    display: inline-block;
+    width: 30px;
+  }
+
+  .dropdownListTwo {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .itemsOne p {
+    font-size: 14px;
+  }
+
+  #dropdownHolder a {
+    font-size: 18px !important;
+    margin: 10px 0px !important;
+  }
+
+  button#mobileSearch {
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    color: #fff;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 16px;
+    margin-left: -15px;
+    cursor: pointer;
+    margin: 0px 15px;
+    margin-left: 0;
+  }
+
+  #searchbtn {
+    display: none;
+  }
+
+  span#closeMenu {
+    display: inline-block;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  .searchBox {
+    position: relative;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    width: 100%;
+    height: 50px;
+    border-radius: 45px;
+    padding: 0px 7px;
+    left: 0;
+    top: 35px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .cross span {
+    left: 8px;
+    top: -35px;
+  }
+
+  .mobileshow {
+    opacity: 1;
+    top: 15px;
+    visibility: visible;
+    display: flex;
+  }
+
+  .hero-cnt-wrapper {
+    margin-top: 10px;
+    position: inherit;
+  }
+
+  .hero-cnt-wrapper h2 {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .hero-cnt-wrapper a {
+    font-size: 16px;
+    padding: 12px 25px;
+    position: relative;
+    top: 26px;
+    left: 0;
+  }
+  .hero-cnt-wrapper a::before {
+    right: -3px;
+    top: -3px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a::after {
+    border-width: 2px;
+    left: -3px;
+    top: -3px;
+  }
+
+  .hero-cnt-wrapper a span::before {
+    left: -28px;
+    top: 20px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a span::after {
+    right: -28px;
+    top: 20px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a:hover::before {
+    right: -8px;
+    top: -8px;
+  }
+
+  .hero-cnt-wrapper a:hover::after {
+    left: -8px;
+    top: -8px;
+  }
+
+  .hero-cnt-wrapper a:hover span::before {
+    left: -33px;
+    top: 25px;
+  }
+
+  .hero-cnt-wrapper a:hover span::after {
+    right: -33px;
+    top: 25px;
+  }
+
+  #heroArea {
+    padding-bottom: 156px;
+    clip-path: none;
+  }
+
+  #trending {
+    clip-path: none;
+    padding-top: 80px;
+    margin-top: 0;
+  }
+
+  .hero-cnt {
+    margin-top: 60px;
+  }
+
+  .trendingBlockList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+/*
+====================================
+Xtra Small Screen - Small Mobile
+====================================
+*/
+@media screen and (max-width: 576px) {
+  .container-fluid {
+    padding: 0px 15px;
+  }
+
+  .topMenu ul li a {
+    margin: 0px 4px;
+    font-size: 15px;
+  }
+
+  .headerLeft a img {
+    max-width: 90px;
+  }
+
+  .headerMenu {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    left: -100%;
+    top: 0;
+    z-index: 9999;
+    padding: 35px;
+    transition: all 0.5s ease;
+    border-radius: 0;
+  }
+
+  .menuActive {
+    left: 0%;
+  }
+
+  .headerCart ul li a {
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+  }
+
+  #hambargur {
+    display: inline-block;
+    opacity: 1 !important;
+    color: #fff;
+    font-size: 25px;
+    position: relative;
+    top: 3px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+
+  header {
+    margin-top: 15px;
+  }
+
+  .headerMenu ul li {
+    display: block;
+    margin: 8px auto;
+  }
+
+  .headerMenu ul li a {
+    font-size: 15px;
+  }
+
+  .selected .dropdownMenu {
+    opacity: 1;
+    visibility: visible;
+    top: 35px;
+    left: 0;
+    padding: 15px;
+  }
+
+  .dropdownMenu {
+    width: 100%;
+  }
+
+  .dropdownHeading {
+    border-radius: 6px;
+    padding: 6px 15px;
+  }
+
+  .dropdownListOne {
+    padding: 8px 4px;
+  }
+
+  .dropdownListOne ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 5px;
+  }
+
+  .dropdownListOne ul li a img {
+    display: inline-block;
+    width: 30px;
+  }
+
+  .dropdownListTwo {
+    padding-left: 0;
+    padding-right: 0;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .itemsOne p {
+    font-size: 14px;
+  }
+
+  #dropdownHolder a {
+    font-size: 18px !important;
+    margin: 10px 0px !important;
+  }
+
+  button#mobileSearch {
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    color: #fff;
+    font-size: 13px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 16px;
+    margin-left: -15px;
+    cursor: pointer;
+    margin: 0px 15px;
+    margin-left: 0;
+  }
+
+  #searchbtn {
+    display: none;
+  }
+
+  span#closeMenu {
+    display: inline-block;
+    color: #fff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  .searchBox {
+    position: relative;
+    background: linear-gradient(
+      49deg,
+      rgba(255, 122, 2, 1) 0%,
+      rgba(255, 74, 26, 1) 100%
+    );
+    width: 100%;
+    height: 50px;
+    border-radius: 45px;
+    padding: 0px 7px;
+    left: 0;
+    top: 35px;
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .cross span {
+    left: 8px;
+    top: -35px;
+  }
+
+  .mobileshow {
+    opacity: 1;
+    top: 15px;
+    visibility: visible;
+    display: flex;
+  }
+
+  .hero-cnt-wrapper {
+    margin-top: 10px;
+    position: inherit;
+  }
+
+  .hero-cnt-wrapper h2 {
+    color: #fff;
+    font-size: 25px;
+  }
+
+  .hero-cnt-wrapper a {
+    font-size: 16px;
+    padding: 12px 25px;
+    position: relative;
+    top: 26px;
+    left: 0;
+  }
+  .hero-cnt-wrapper a::before {
+    right: -3px;
+    top: -3px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a::after {
+    border-width: 2px;
+    left: -3px;
+    top: -3px;
+  }
+
+  .hero-cnt-wrapper a span::before {
+    left: -28px;
+    top: 20px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a span::after {
+    right: -28px;
+    top: 20px;
+    border-width: 2px;
+  }
+
+  .hero-cnt-wrapper a:hover::before {
+    right: -8px;
+    top: -8px;
+  }
+
+  .hero-cnt-wrapper a:hover::after {
+    left: -8px;
+    top: -8px;
+  }
+
+  .hero-cnt-wrapper a:hover span::before {
+    left: -33px;
+    top: 25px;
+  }
+
+  .hero-cnt-wrapper a:hover span::after {
+    right: -33px;
+    top: 25px;
+  }
+
+  #heroArea {
+    padding-bottom: 156px;
+    clip-path: none;
+  }
+
+  #trending {
+    clip-path: none;
+    padding-top: 80px;
+    margin-top: 0;
+  }
+
+  .hero-cnt {
+    margin-top: 60px;
+  }
+
+  .trendingBlockList {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+  }
+}
